@@ -3,7 +3,7 @@
 </style>
 <template>
 <div class="x-gif">
-    <img id="" :data-animated-src="src" data-autoplay="0" ref="gif"/>
+    <img id="" :data-animated-src="realSrc" data-autoplay="0" ref="gif"/>
     <div class="button-group">
         <button class="button1"> 播放 </button>
         <button class="button1" @click="reset">重置</span> </button>
@@ -37,6 +37,14 @@ export default {
         }
     },
     computed:{
+        realSrc(){ //根据base
+            let base = "https://cdn.jsdelivr.net/gh/Rainboylvx/DSA-gif/dist/"
+
+            let reg = /^http[s]?:/
+            if(this.src[0] === '/' || ret.test(this.src) )
+                return this.src
+            return base + this.src
+        },
         frameLength(){
             if( this.sup){
                 return this.sup.get_length()
