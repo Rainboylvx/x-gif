@@ -41,7 +41,7 @@ export default {
             let base = "https://cdn.jsdelivr.net/gh/Rainboylvx/DSA-gif/dist/"
 
             let reg = /^http[s]?:/
-            if(this.src[0] === '/' || ret.test(this.src) )
+            if(this.src[0] === '/' || reg.test(this.src) )
                 return this.src
             return base + this.src
         },

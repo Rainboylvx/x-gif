@@ -1422,12 +1422,12 @@ function normalizeComponent (
   }
 }
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"45f7f6bf-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/xgif.vue?vue&type=template&id=1a2e24c8&shadow
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"73e36efb-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/xgif.vue?vue&type=template&id=008dafc9&shadow
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"x-gif"},[_c('img',{ref:"gif",attrs:{"id":"","data-animated-src":_vm.realSrc,"data-autoplay":"0"}}),_c('div',{staticClass:"button-group"},[_c('button',{staticClass:"button1"},[_vm._v(" 播放 ")]),_c('button',{staticClass:"button1",on:{"click":_vm.reset}},[_vm._v("重置")]),_c('button',{staticClass:"button1",on:{"click":_vm.nextStep}},[_vm._v(" 下一帧")]),_c('button',{staticClass:"button1",on:{"click":_vm.preStep}},[_vm._v("上一帧")]),_c('button',{staticClass:"button1",on:{"click":function($event){}}},[_vm._v("跳转")]),_c('div',{staticClass:"inputClass"},[_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.frame),expression:"frame"}],attrs:{"type":"number"},domProps:{"value":(_vm.frame)},on:{"input":function($event){if($event.target.composing){ return; }_vm.frame=$event.target.value}}}),_c('span',[_vm._v("/")]),_c('span',[_vm._v(_vm._s(_vm.frameLength)+"帧")])])])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/xgif.vue?vue&type=template&id=1a2e24c8&shadow
+// CONCATENATED MODULE: ./src/xgif.vue?vue&type=template&id=008dafc9&shadow
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/parse-int.js
 var parse_int = __webpack_require__("e814");
@@ -1481,7 +1481,7 @@ var SuperGif = __webpack_require__("6024");
       //根据base
       var base = "https://cdn.jsdelivr.net/gh/Rainboylvx/DSA-gif/dist/";
       var reg = /^http[s]?:/;
-      if (this.src[0] === '/' || ret.test(this.src)) return this.src;
+      if (this.src[0] === '/' || reg.test(this.src)) return this.src;
       return base + this.src;
     },
 
